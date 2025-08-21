@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minuman Segar & Sehat</title>
+    <link rel="stylesheet" href="script.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Minuman Boba Sobaba</div>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#tentang-kami">Tentang Kami</a></li>
+                <li><a href="#kontak">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="running-text-container">
+            <div class="running-text">
+                📢 Promo Spesial Akhir Pekan! Beli 2 gratis 1 untuk semua varian rasa! Pesan sekarang juga! 🍹
+            </div>
+        </div>
+
+        <section id="beranda" class="hero">
+            <div class="hero-content">
+                <h1>Segarnya Minuman Boba untuk Harimu!</h1>
+                <p>Terbuat dari bahan pilihan, rasakan kesegaranya!</p>
+                <a href="#produk" class="cta-button">Lihat Produk Kami</a>
+            </div>
+        </section>
+
+        <section id="produk" class="section">
+            <h2>Produk Kami</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="coklat.jpg" alt="Produk 1">
+                    <h3>Boba Cappuchino</h3>
+                    <p>Boba Coklat Dengan Bahan Premium.</p>
+                    <span class="price">Rp 5.000</span>
+                    <button class="buy-button" data-product="boba coklat">Pesan Sekarang</button>
+                </div>
+                <div class="product-item">
+                    <img src="copicino.jpg" alt="Produk 2">
+                    <h3>Boba Coklat</h3>
+                    <p>Boba Cappuchino Dengan Bahan Premium.</p>
+                    <span class="price">Rp 5.000</span>
+                    <button class="buy-button" data-product="boba copicino">Pesan Sekarang</button>
+                </div>
+                <div class="product-item">
+                    <img src="taro.jpg" alt="Produk 2">
+                    <h3>Boba Taro</h3>
+                    <p>Boba Taro Dengan Bahan Premium</p>
+                    <span class="price">Rp 5.000</span>
+                    <button class="buy-button" data-product="boba taro">Pesan Sekarang</button>
+                </div>
+                <div class="product-item">
+                    <img src="greentea.jpg" alt="Produk 2">
+                    <h3>Boba GreenTea</h3>
+                    <p>Boba GreenTea Dengan Bahan Premium.</p>
+                    <span class="price">Rp 5.000</span>
+                    <button class="buy-button" data-product="boba greentea">Pesan Sekarang</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeri" class="section">
+            <h2>Galeri</h2>
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide"><img src="copicino.jpg" alt="Galeri 1"></div>
+                    <div class="slide"><img src="taro.jpg" alt="Galeri 2"></div>
+                    <div class="slide"><img src="coklat.jpg" alt="Galeri 3"></div>
+                    <div class="slide"><img src="greentea.jpg" alt="Galeri 4"></div>
+                </div>
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="testimoni" class="section">
+            <h2>Testimoni Pelanggan</h2>
+            <div class="testimoni-grid">
+                <div class="testimoni-item">
+                    <p>"Enak banget! Rasanya bener-bener fresh dan bikin ketagihan. 👍"</p>
+                    <span>- Rifa, BD Sejahtra</span>
+                </div>
+                <div class="testimoni-item">
+                    <p>"Pelayanannya cepat, produknya berkualitas. Recommended!"</p>
+                    <span>- Vanessa, Rawajitu</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="tentang-kami" class="section">
+            <h2>Tentang Kami</h2>
+            <p>Kami berkomitmen untuk menyajikan minuman boba dengan berkualitas tinggi. Setiap produk kami dibuat dengan cinta dan bahan-bahan terbaik. Kami percaya bahwa minuman yang baik tidak hanya enak, tapi juga mensegarkan.</p>
+        </section>
+
+        <section id="kontak" class="section">
+            <h2>Hubungi Kami</h2>
+            <p>Punya pertanyaan atau ingin bermitra? Hubungi kami melalui:</p>
+            <ul>
+                <li>Email: sobaba@gmail.com</li>
+                <li>Telepon: 0858-0935-6137</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Minuman Boba Segar & Mantap. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    /* Styling Umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #4a4a4a;
+}
+
+/* Navigasi */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #4CAF50; /* Warna hijau */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Teks Berjalan */
+.running-text-container {
+    background-color: #ffeb3b; /* Warna kuning */
+    color: #333;
+    padding: 8px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 60px; /* Jarak dari header */
+}
+
+.running-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+/* Bagian Hero (Beranda) */
+.hero {
+    background: url('H934f63a681a04a41adfe27972dc9f0d5j.avif') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-top: -60px; /* Untuk menutupi ruang header */
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Bagian Produk */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4CAF50;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+/* Galeri (Slider) */
+.slider-container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Testimoni */
+.testimoni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimoni-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.testimoni-item p {
+    font-style: italic;
+    font-size: 16px;
+    color: #555;
+}
+
+.testimoni-item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+<script>
+    // --- Slider Foto ---
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+// Tambahkan auto-play slider
+setInterval(() => {
+    plusSlides(1);
+}, 5000); // Ganti slide setiap 5 detik
+
+// --- Pesan WhatsApp Otomatis ---
+document.addEventListener('DOMContentLoaded', () => {
+    const buyButtons = document.querySelectorAll('.buy-button');
+    const whatsappNumber = '6285809356137'; // Ganti dengan nomor WhatsApp Anda (format: 628...)
+
+    buyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productName = button.getAttribute('data-product');
+            const message = encodeURIComponent(`Halo, saya ingin pesan ${productName}. Apakah masih tersedia?`);
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+        });
+    });
+});
+</script>
